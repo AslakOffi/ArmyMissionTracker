@@ -1,4 +1,4 @@
-# ArmyMissionTracker
+# 🪖 ArmyMissionTracker
 
 This project is a simple report generator for the army developed in Go. It lets you create customized reports by filling in a form and saving them in JSON format.
 It has been designed mainly for the French army.
