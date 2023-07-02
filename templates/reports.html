@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reports List</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/stylereports.css">
+</head>
+<body>
+<h1>Reports List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{range .}}
+    <tr>
+        <td>{{.}}</td>
+        <td><a href="/download?filename={{.}}">Download</a></td>
+    </tr>
+    {{end}}
+    </tbody>
+</table>
+<div>
+    <a href="/">Back to Form</a>
+</div>
+</body>
+</html>
