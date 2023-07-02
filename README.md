@@ -40,7 +40,7 @@ ArmyMissionTracker/
 ```
 
 - `main.go` is the main file containing the application logic.
-- The `static/` directory contains static files such as CSS style sheets.
+- The `static/` directory contains static files such as CSS style sheets and JS.
 - The `templates/` directory contains HTML templates used to generate web pages.
 - `report_form.html` is the HTML template for the report form.
 - `reports.html` is the HTML template for the generated reports list.
