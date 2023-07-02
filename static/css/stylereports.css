@@ -3,30 +3,23 @@
 /* Style général */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #0055a4;
+    padding: 20px;
 }
 
 h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 28px;
     text-align: center;
-    color: #0055a4; /* Bleu */
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-/* Style du bouton */
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -46,15 +39,55 @@ th {
     background-color: #45a049;
 }
 
-/* Style du lien de retour */
-.back-link {
-    display: inline-block;
-    margin-top: 10px;
+.report-table {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-/* Ajout de marge en bas pour éviter que le lien chevauche le tableau */
-.back-link a {
-    margin-bottom: 20px;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
+th, td {
+    padding: 10px;
+    text-align: left;
+}
 
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #0055a4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+td a.button {
+    padding: 6px 12px;
+}
+
+td a.button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .report-table {
+        margin: 10px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
